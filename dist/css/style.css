@@ -1248,11 +1248,11 @@ button.swiper-pagination-bullet {
 
 section {
   background-color: #141414;
-  padding: 180px 0;
+  padding-top: 180px;
 }
 @media screen and (max-width: 1074px) {
   section {
-    padding: 90px 0;
+    padding-top: 90px;
   }
 }
 
@@ -1376,4 +1376,83 @@ section {
   letter-spacing: 1.2px;
   text-align: center;
   color: #db3138;
+}
+
+.slider {
+  position: relative;
+}
+.slider .container {
+  overflow: hidden;
+}
+@media screen and (max-width: 1641px) {
+  .slider .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .slider .container {
+    width: 450px;
+  }
+}
+
+:root {
+  --swiper-navigation-size: 21px;
+  --swiper-navigation-color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 63%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #db3138;
+  transform: rotate(-45deg);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  transform: rotate(45deg);
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-button-prev {
+  left: 7%;
+}
+
+.swiper-button-next {
+  right: 7%;
+}
+
+.slide {
+  position: relative;
+  height: 385px;
+  transition: transform 0.3s ease 0.1s;
+}
+.slide:hover {
+  transform: scale(1.1);
+}
+.slide__img {
+  width: 416px;
+  height: 350px;
+}
+.slide__img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.slide__text {
+  width: 366px;
+  padding: 10px 0;
+  background-color: #db3138;
+  font-family: ReformaGroteskDemi;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
 }
