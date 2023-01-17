@@ -870,19 +870,19 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.element__top, .materials__row, .contacts__row, .menu__list, .menu {
+.switchers__row, .element__top, .materials__row, .contacts__row, .menu__list, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.achievements__row {
+.cards__row, .achievements__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.column .cell__row, .item__row, .center__flex, .menu__sublist {
+.card__row, .services__row, .column .cell__row, .item__row, .center__flex, .menu__sublist {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1291,6 +1291,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 115px;
   position: relative;
+  position: relative;
 }
 .column__title::after {
   position: absolute;
@@ -1523,6 +1524,9 @@ section {
 .element:last-child {
   margin-bottom: 0;
 }
+.element:nth-child(1), .element:nth-child(2) {
+  position: relative;
+}
 .element:nth-child(1)::after, .element:nth-child(2)::after {
   position: absolute;
   bottom: -54.15px;
@@ -1636,4 +1640,136 @@ section {
     width: auto;
     font-size: 15px;
   }
+}
+
+.services__title {
+  font-family: ReformaGroteskDemi;
+  font-size: 52px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 2.6px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 115px;
+  position: relative;
+}
+.services__title::after {
+  position: absolute;
+  bottom: -55.5px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #db3138;
+  left: 55%;
+  transform: rotate(-45deg) translate(-55%, 0);
+}
+.services__title::before {
+  position: absolute;
+  bottom: -55.5px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #db3138;
+  left: 45%;
+  transform: rotate(-45deg) translate(-45%, 0);
+}
+.switchers__row {
+  margin-bottom: 80px;
+}
+.switchers__button {
+  padding: 20px 40px;
+  font-family: ReformaGroteskDemi;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 60px;
+}
+.switchers__button:last-child {
+  margin-right: 0;
+}
+.switchers__button._active {
+  background-color: #db3138;
+}
+
+.cards {
+  position: relative;
+}
+.cards__row {
+  background-color: #141414;
+  margin: 0 -12px;
+}
+.cards__row.detailing {
+  background-color: #252525;
+}
+.cards__row._active {
+  display: flex;
+}
+.cards__row._none {
+  display: none;
+}
+.card {
+  padding: 0 12px;
+  flex: 0 1 25%;
+  border: 1px solid #898989;
+  padding: 86px 50px;
+}
+.card__img {
+  width: 70px;
+  margin-bottom: 27.2px;
+}
+.card__img img {
+  max-width: 100%;
+}
+.card__title {
+  font-family: ReformaGroteskDemi;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.card__text {
+  font-family: ReformaGroteskDemi;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.card__link {
+  background-color: #db3138;
+  padding: 10px 20px;
+}
+.card__link a {
+  font-family: ReformaGroteskDemi;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
