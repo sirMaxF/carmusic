@@ -876,13 +876,13 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 
-.cards__row, .achievements__row {
+.bottom, .up, .forms__middle, .cards__row, .achievements__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.gallery, .card__row, .services__row, .column .cell__row, .item__row, .center__flex, .menu__sublist {
+.social, .forms__row, .gallery, .card__row, .services__row, .column .cell__row, .item__row, .center__flex, .menu__sublist {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1793,4 +1793,154 @@ section {
   content: "";
   background-color: #141414;
   opacity: 0.5;
+}
+
+.forms .container {
+  max-width: 636px;
+}
+.forms form > div {
+  padding-bottom: 24px;
+}
+.forms__subtext {
+  height: 16px;
+  font-size: 16px;
+  color: #db3138;
+}
+.forms__middle {
+  align-items: start;
+}
+@media screen and (max-width: 644px) {
+  .up {
+    flex-direction: column;
+  }
+}
+.up input {
+  background-color: #141414;
+  width: 306px;
+  height: 47px;
+  border: 1px solid #898989;
+  padding-left: 25px;
+  font-family: ReformaGroteskDemi;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.up div {
+  margin-right: 24px;
+}
+.up div:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 644px) {
+  .up div {
+    width: 100%;
+    margin-right: 0;
+  }
+  .up div input {
+    width: 100%;
+  }
+}
+
+textarea {
+  background-color: #141414;
+  width: 526px;
+  height: 150px;
+  border: 1px solid #898989;
+  padding: 15px 25px;
+  font-family: ReformaGroteskDemi;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 644px) {
+  textarea {
+    width: 300px;
+  }
+}
+
+.social li {
+  margin-bottom: 15px;
+}
+.social li:last-child {
+  margin-bottom: 0;
+}
+.social__icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #898989;
+  padding: 10px 10px;
+}
+.social__icon:hover {
+  padding: 5px 5px;
+}
+.social__icon_telegram {
+  background: url("../img/icons/icons.svg#soc-icons") no-repeat center center;
+  background-origin: content-box;
+}
+.social__icon_vk {
+  background: url("../img/icons/icons.svg#soc-icons_(2)") no-repeat center center;
+  background-origin: content-box;
+}
+.social__icon_youtube {
+  background: url("../img/icons/icons.svg#soc-icons_(1)") no-repeat center center;
+  background-origin: content-box;
+}
+
+@media screen and (max-width: 644px) {
+  .bottom {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+.bottom button[type=submit] {
+  background-color: #db3138;
+  padding: 12px 25px;
+  font-family: ReformaGroteskDemi;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+@media screen and (max-width: 483px) {
+  .bottom button[type=submit] {
+    margin-bottom: 15px;
+  }
+}
+.bottom button[type=submit]:hover {
+  background-color: #fff;
+  color: #db3138;
+}
+.bottom > div span {
+  font-family: ReformaGroteskDemi;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bottom > div img {
+  margin-right: 10px;
 }
