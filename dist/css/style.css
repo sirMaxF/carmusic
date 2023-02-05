@@ -1693,6 +1693,9 @@ section {
   border: 1px solid #898989;
   padding: 86px 50px;
 }
+.card:hover {
+  border-width: 3px;
+}
 @media screen and (max-width: 873px) {
   .card {
     flex-basis: 50%;
