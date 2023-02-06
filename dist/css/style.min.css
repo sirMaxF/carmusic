@@ -870,13 +870,13 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.switchers__row, .element__top, .materials__row, .contacts__row, .menu__list, .menu {
+.footer__menu ul, .footer__menu, .switchers__row, .element__top, .materials__row, .contacts__row, .menu__list, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bottom, .up, .forms__middle, .cards__row, .achievements__row {
+.footer__row, .bottom, .up, .forms__middle, .cards__row, .achievements__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1946,4 +1946,55 @@ textarea {
 }
 .bottom > div img {
   margin-right: 10px;
+}
+.footer {
+  background-color: #141414;
+  border-top: 1px solid #898989;
+}
+@media screen and (max-width: 1149px) {
+  .footer {
+    padding: 15px 0;
+  }
+}
+.footer__row {
+  height: 89px;
+}
+@media screen and (max-width: 1149px) {
+  .footer__row {
+    flex-direction: column;
+  }
+}
+.footer__copyright {
+  opacity: 0.5;
+  font-family: ReformaGroteskDemi;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__menu ul li {
+  margin-right: 40px;
+}
+.footer__menu ul li:last-child {
+  margin-right: 0;
+}
+.footer__link {
+  flex-grow: 0;
+  font-family: ReformaGroteskMedium;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+  text-align: center;
+  color: #fff;
+}
+.footer__link:hover {
+  color: #db3138;
 }
